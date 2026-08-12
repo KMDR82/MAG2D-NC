@@ -1,0 +1,13 @@
+model,metric,mean,std,ci_lo,ci_hi
+dummy_majority,f1_macro,0.3416,0.009,0.3347,0.3486
+dummy_majority,mcc,0.0,0.0,0.0,0.0
+dummy_majority,bal_acc,0.5,0.0,0.5,0.5
+dummy_stratified,f1_macro,0.5099,0.0942,0.4349,0.5776
+dummy_stratified,mcc,0.0448,0.1859,-0.0999,0.1764
+dummy_stratified,bal_acc,0.522,0.0891,0.4522,0.5853
+logreg,f1_macro,0.6363,0.1024,0.5655,0.7152
+logreg,mcc,0.2844,0.2007,0.1291,0.4397
+logreg,bal_acc,0.6393,0.0973,0.5637,0.715
+lgbm,f1_macro,0.5933,0.1446,0.4785,0.7215
+lgbm,mcc,0.2141,0.276,0.0135,0.4359
+lgbm,bal_acc,0.6041,0.1289,0.5116,0.7176
