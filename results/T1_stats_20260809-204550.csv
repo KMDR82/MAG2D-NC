@@ -1,0 +1,7 @@
+pair,wilcoxon_p,cliffs_delta,holm_p
+dummy_majority vs logreg,0.0,-0.96373,0.0
+dummy_majority vs lgbm,0.0,-0.952,0.0
+dummy_majority vs dummy_stratified,0.0,-0.95022,0.0
+dummy_stratified vs logreg,0.0,-0.688,0.0
+dummy_stratified vs lgbm,0.0,-0.61724,0.0
+logreg vs lgbm,0.63085,0.0464,0.63085

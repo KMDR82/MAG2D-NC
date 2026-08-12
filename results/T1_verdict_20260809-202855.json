@@ -1,0 +1,7 @@
+{
+  "best_model": "logreg",
+  "holm_p_vs_dummy": 0.5625,
+  "cliffs_delta_vs_dummy": 0.6,
+  "permutation_p": 0.047619047619047616,
+  "PASS": false
+}
