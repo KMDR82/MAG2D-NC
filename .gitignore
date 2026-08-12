@@ -1,0 +1,23 @@
+# environments
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# raw data (not redistributed)
+dataset/
+*.tar.gz
+*.db
+*.json.gz
+
+# large intermediates
+checkpoints/
+backup/
+*.parquet
+*.pt
+*.npz
+
+# local artifacts
+fig/
+*.log
+.DS_Store

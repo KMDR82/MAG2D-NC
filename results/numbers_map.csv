@@ -1,0 +1,47 @@
+number,where_in_text,source,verified_in_session
+164,Sec2.1 label universe,spiral_labels_v2.csv (gate 58/21/85/15),yes
+58/21/85/15,Sec2.1 class counts,published tables + parse gate + user cross-check,yes
+79/85,Sec2.1 binary split,label2 counts,yes
+147/164,Sec2.1 raw-record cross-validation,label_vs_tar_diff.csv (pass1: 147 both; 0 Q mismatch),yes
+17,Sec2.1 materials without spiral records,label_vs_tar_diff pass2 (unmatched left),yes
+22,Sec2.1 unclassified archive extras,pass2 leftover list,yes
+0.02 r.l.u.,Sec2.1 Q tolerance,diff script parameter,yes
+16905,Sec2.2 C2DB snapshot rows,nb01 key-discovery scan,yes
+14,Sec2.2 ambiguity-flagged rows,spiral_labels_v2.uid_ambiguous sum,yes
+164/164,Sec2.2 inversion cross-check,nb-cell inversion mismatch = none,yes
+8701/1792,Sec2.2 magnetic-annotated / magnetic rows,c2db_magnetic_wide parquet summary,yes
+1103,Sec2.3 JARVIS-2D rows with magnetization,jarvis2d_raw.parquet summary (gate),yes
+6351,Sec2.3 2DMatPedia rows,twodmatpedia_raw.parquet (JARVIS mirror),yes
+13094,Sec2.3 unified corpus rows,T4 gate cell,yes
+8296,Sec2.3 unique reduced formulas,T4_features.parquet shape,yes
+826/729/1239,Sec2.3 overlaps,overlap cell output,yes
+0.1 uB,Sec2.3 magnetic threshold,frozen CONFIG,yes
+144 = 132+4+8,Sec3.1 descriptor counts,features datacard,yes
+61,Sec3.4 leakage groups,features datacard,yes
+75,Sec3.4 outer folds,5 seeds x 3 repeats x 5 folds,yes
+50 / 3-fold,Sec3.3 tabular HP budget,frozen CONFIG,yes
+8 / 150 / 25,Sec3.3 GNN budget (v1.2),nb05 CONFIG,yes
+8 A / 12 / 40,Sec3.3 graph construction,nb05 CONFIG,yes
+20,Sec3.3 angle Gaussians,nb05 lite cell,yes
+1000 / 10000,Sec3.4 permutations / bootstrap,frozen CONFIG v1.1,yes
+0.33,Sec3.4 Cliff delta threshold,frozen P7,yes
+dE units,Sec2.2/T3 easy-axis energies,"[DOGRULANACAK] C2DB docs (values look eV-scale, outliers to +-240)",no
+0.615 [0.590-0.639],Sec4.1 T1 logreg,nb03 T1_summary + verdict json,yes
+0.608 / 0.481 / 0.341,Sec4.1 lgbm / strat / majority,nb03 T1_summary,yes
+156.9 / 8.5e-34,Sec4.1 Friedman,nb03 T1_stats,yes
+0.69 / 0.63 / 0.05,Sec4.1 delta & logreg-vs-lgbm,nb03 T1_stats,yes
+781/461 8.9e-20,Sec4.1 McNemar,nb03 output,yes
+0.49 / 0.57 / 0.003 / 0.011,Sec4.1 permutation,nb03 T1_permutation json,yes
+0.92 / 0.71 / rank1,Sec4.2 stability + leader,nb04 importances,yes
++0.52/-0.42,Sec4.2 inversion direction,nb04 direction table,yes
+0.65-0.70,Sec4.2 DM-SS binary recall,nb04 fine-class table,yes
+0.507 / 0.528,Sec4.3 GNN means,nb05 progress (75+75),yes
+<=1.1e-4 / 0.39-0.53,Sec4.3 A2 stats,T1_A2_final.csv,yes
+180-347s / 67-301MB,Sec4.3+Tab3 unit cost,progress.csv A5,yes
+0.599/0.623 etc,Tab3 A1 ablation,nb04 T1_ablation_A1,yes
+lcurve 0.60->0.65 / collapse,Sec4.3 Fig lcurve,nb04 T1_learning_curve,yes
+0.916/0.874/0.837 -> 0.823/0.670/0.728,Sec4.4+Tab4,T4 indist+lodo CSVs,yes
+R2 0.63/0.19/0.12 ridge -0.30,Sec4.4 regression,T4_lodo_results,yes
+T2 0.40/0.26 MCC 0.23,Sec4.5,T2_results.csv,yes
+DM recall 0.36 [0.29-0.44],Sec4.5,T2 recall block (P7 MAIN TEXT),yes
+T3 2.34/2.52 vs 2.19 R2<0,Sec4.5 negative,T3_results.csv,yes
