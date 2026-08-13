@@ -1,0 +1,13 @@
+{
+  "logreg": {
+    "clf__C": 0.0015109749531677812
+  },
+  "lgbm": {
+    "clf__learning_rate": 0.0594443141139343,
+    "clf__min_child_samples": 39,
+    "clf__n_estimators": 143,
+    "clf__num_leaves": 101,
+    "clf__reg_lambda": 5.376680841741095,
+    "clf__subsample": 0.884486897114977
+  }
+}

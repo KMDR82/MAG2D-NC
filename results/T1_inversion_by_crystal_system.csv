@@ -1,0 +1,5 @@
+stratum,n,centro_nc,centro_col,noncentro_nc,noncentro_col,odds_ratio,note
+hexagonal,15,0,0,2,13,,no contrast (all one symmetry class)
+monoclinic,14,2,1,5,6,2.4,
+tetragonal,18,0,0,3,15,,no contrast (all one symmetry class)
+trigonal,90,36,23,18,13,1.1304347826086956,

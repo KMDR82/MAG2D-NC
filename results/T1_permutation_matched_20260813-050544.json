@@ -1,0 +1,20 @@
+{
+  "logreg": {
+    "observed": 0.6424898334777374,
+    "null_mean": 0.4879344669679737,
+    "null_sd": 0.044643708676656804,
+    "null_p95": 0.5623258773057874,
+    "p_value": 0.000999000999000999,
+    "n_permutations": 1000,
+    "procedure": "matched: 5 seeds x 3 repeats x 5 folds per permutation, hyperparameters fixed to the modal selection"
+  },
+  "lgbm": {
+    "observed": 0.5963019776846262,
+    "null_mean": 0.4887009144405638,
+    "null_sd": 0.04100457028391014,
+    "null_p95": 0.5562613159375895,
+    "p_value": 0.007992007992007992,
+    "n_permutations": 1000,
+    "procedure": "matched: 5 seeds x 3 repeats x 5 folds per permutation, hyperparameters fixed to the modal selection"
+  }
+}

@@ -1,0 +1,3 @@
+model,b_model_only,c_dummy_only,n_discordant,p_exact
+logreg,60,28,88,0.000846496085616675
+lgbm,58,27,85,0.001016220951347889
