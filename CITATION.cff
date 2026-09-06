@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the associated article."
-title: "MAG2D-NC: machine learning of non-collinear magnetic order in 2D materials"
+title: "Trigonal frustration, not broken inversion symmetry, marks non-collinear magnetic order in two-dimensional materials: a data-driven analysis of the C2DB spin-spiral ground states"
 authors:
   - family-names: Akkaya
     given-names: Ahmet
@@ -10,7 +10,7 @@ year: 2026
 license: MIT
 preferred-citation:
   type: article
-  title: "Learning non-collinear magnetic order in two-dimensional materials: an interpretable machine-learning study of the C2DB spin-spiral ground states"
+  title: "Trigonal frustration, not broken inversion symmetry, marks non-collinear magnetic order in two-dimensional materials: a data-driven analysis of the C2DB spin-spiral ground states"
   authors:
     - family-names: Akkaya
       given-names: Ahmet
