@@ -7,9 +7,7 @@ based on the C2DB spin-spiral ground-state labels.
 
 This repository accompanies the manuscript:
 
-> A. Akkaya, *Learning non-collinear magnetic order in two-dimensional
-> materials: an interpretable machine-learning study of the C2DB spin-spiral
-> ground states*, submitted to Physica B: Condensed Matter (2026).
+> A. Akkaya, *Trigonal frustration, not broken inversion symmetry, marks non-collinear magnetic order in two-dimensional materials: a data-driven analysis of the C2DB spin-spiral ground states*, submitted to Physica B: Condensed Matter (2026).
 
 ## Overview
 
