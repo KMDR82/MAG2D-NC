@@ -16,7 +16,7 @@ Comput. Mater. **10**, 170 (2024)] showed that more than half of the predicted
 2D magnets order non-collinearly. This project asks which parts of the
 magnetic ground-state problem are encoded in composition and symmetry alone:
 
-- - **T1** — binary classification (collinear vs. non-collinear) on the complete
+- **T1** — binary classification (collinear vs. non-collinear) on the complete
   164-material spin-spiral label set, under a protocol frozen before the
   confirmatory runs, with group-aware cross-validation and a matched
   label-permutation test.
