@@ -95,7 +95,6 @@ Run the notebooks in order:
 | 04 | Interpretability, ablations, learning curves | ~2 h (CPU) |
 | 05 | Graph models (CGCNN, ALIGNN-lite) | ~14 h (GPU) |
 | 06 | Cross-database corpus, T4/T3/T2 | ~3 h (CPU) |
-| 07 | Rule baselines, dependency-aware inference, matched permutation test | ~1 h (CPU) |
 
 All long-running stages are checkpointed and resume automatically. Every
 number reported in the manuscript is traceable to a run record via
