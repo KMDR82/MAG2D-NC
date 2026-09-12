@@ -7,7 +7,7 @@ based on the C2DB spin-spiral ground-state labels.
 
 This repository accompanies the manuscript:
 
-> A. Akkaya, *Trigonal frustration, not broken inversion symmetry, marks non-collinear magnetic order in two-dimensional materials: a data-driven analysis of the C2DB spin-spiral ground states*, submitted to Physica B: Condensed Matter (2026).
+> A. Akkaya and M. Arucu, *Trigonal frustration, not broken inversion symmetry, marks non-collinear magnetic order in two-dimensional materials: a data-driven analysis of the C2DB spin-spiral ground states*, submitted to the Journal of Magnetism and Magnetic Materials (2026).
 
 ## Overview
 
@@ -16,12 +16,14 @@ Comput. Mater. **10**, 170 (2024)] showed that more than half of the predicted
 2D magnets order non-collinearly. This project asks which parts of the
 magnetic ground-state problem are encoded in composition and symmetry alone:
 
-- **T1** — binary classification (collinear vs. non-collinear) on the complete
-  164-material spin-spiral label set, under a pre-registered protocol with
-  group-aware cross-validation and label-permutation testing.
+- - **T1** — binary classification (collinear vs. non-collinear) on the complete
+  164-material spin-spiral label set, under a protocol frozen before the
+  confirmatory runs, with group-aware cross-validation and a matched
+  label-permutation test.
 - **T2** — four-class refinement (FM / collinear AFM / non-collinear / DM spiral).
-- **T3** — regression of stored easy-axis energy differences (reported as a
-  pre-committed negative result).
+- **T3** — regression of the stored magnetic anisotropy energies
+  (`dE_zx`, `dE_zy`, meV per unit cell); a negative result, reported rather
+  than omitted.
 - **T4** — magnetic screening across three databases (C2DB, JARVIS-2D,
   2DMatPedia) with leave-one-database-out evaluation.
 
@@ -31,15 +33,19 @@ line-graph variant) under compute-matched budgets.
 
 ### Main findings
 
-- Collinear versus non-collinear order is learnable from composition and
-  symmetry alone (macro-F1 = 0.615, permutation *p* = 0.003, 75 grouped folds).
-- The stable drivers are the inversion-symmetry flag and the magnetic-species
-  atomic number; non-collinearity is favoured on *centrosymmetric* frustrated
-  lattices rather than in the chiral subclass.
+- Collinear versus non-collinear order is predictable well above chance
+  (macro-F1 = 0.615, matched label-permutation *p* = 0.001, 75 grouped folds).
+- Most of that signal comes from one descriptor: a parameter-free
+  inversion-symmetry rule reaches 0.567, from which the full model is not
+  separable at this sample size.
+- A model-free analysis places the effect in the lattice family: the odds
+  ratio for centrosymmetric structures is 3.05 with the chiral spirals
+  excluded, but falls to 1.22 once crystal system is controlled for, so
+  trigonal frustration is the variable doing the work.
 - Spin–orbit-channel quantities resist composition-level learning: the ligand
   SOC proxies are inert, and the anisotropy energy is not learnable (T3).
-- Graph neural networks do not beat tabular descriptors at this data scale,
-  at two orders of magnitude higher cost.
+- Graph neural networks do not beat tabular descriptors at this data scale
+  and tuning budget, at two orders of magnitude higher cost.
 - Magnetic labels transfer across DFT protocols; moment magnitudes do not.
 
 ## Repository layout
@@ -89,6 +95,7 @@ Run the notebooks in order:
 | 04 | Interpretability, ablations, learning curves | ~2 h (CPU) |
 | 05 | Graph models (CGCNN, ALIGNN-lite) | ~14 h (GPU) |
 | 06 | Cross-database corpus, T4/T3/T2 | ~3 h (CPU) |
+| 07 | Rule baselines, dependency-aware inference, matched permutation test | ~1 h (CPU) |
 
 All long-running stages are checkpointed and resume automatically. Every
 number reported in the manuscript is traceable to a run record via
@@ -124,4 +131,5 @@ Choudhary et al. (2020) for JARVIS, and Zhou et al. (2019) for 2DMatPedia.
 
 ## Acknowledgments
 
-The C2DB bulk data were kindly provided by DTU/CAMD.
+The C2DB bulk data were kindly provided by DTU/CAMD (K. S. Thygesen,
+T. Olsen and J. J. Mortensen).
